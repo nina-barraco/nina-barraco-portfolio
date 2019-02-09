@@ -1,0 +1,289 @@
+body {
+    padding: 5%;
+}
+
+h1 {
+    font-family: 'Argent CF', serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #313131;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-family: 'benton-sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: #505050;
+}
+
+main {
+    margin-top: 10%;
+}
+
+.heading-line {
+    width: 50%;
+    border: 1px solid #707070;
+}
+
+.subtitle {
+    font-size: 1.5em;
+}
+
+.inline-link {
+    text-decoration: none;
+    color: rgb(212, 127, 0)
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .subtitle {
+        font-size: 1.2em;
+    }
+}
+
+
+/* TOP NAV */
+
+.topnav {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+.initials {
+    font-family: 'Argent CF', serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2em;
+    text-decoration: none;
+    color: #313131;
+    grid-column: 1 / 2;
+}
+
+.nav-container {
+    grid-column: 12 / 13;
+    justify-self: end;
+}
+
+@media (max-width: 800px) {
+    .initials {
+        grid-column: 2 / 3;
+    }
+    .nav-container {
+        grid-column: 11 / 12;
+    }
+}
+
+.topnav-icon {
+    cursor: pointer;
+    padding-bottom: 10%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #313131;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-7px, -4px);
+}
+
+.topnav-links {
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .75s ease .1s;
+}
+
+.topnav-link {
+    font-family: 'benton-sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .8em;
+    letter-spacing: .1em;
+    text-decoration: none;
+    color: #313131;
+    padding-top: 15%;
+}
+
+.display-links {
+    visibility: visible;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer-link {
+    font-family: 'benton-sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .8em;
+    letter-spacing: .1em;
+    text-decoration: none;
+    color: #313131;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+
+/* ABOUT */
+
+.about {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+.about-heading {
+    grid-column: 2 / 4;
+    justify-self: start;
+}
+
+#about-line {
+    margin-top: 1.5em;
+}
+
+.about-title {
+    margin-top: 10%;
+}
+
+.about-p {
+    grid-column: 6 / 12;
+}
+
+@media (max-width: 800px) {
+    .about {
+        margin-top: 20%;
+    }
+    .about-heading {
+        grid-column: 2 / 12;
+    }
+    
+    .about-p {
+        grid-column: 2 / 12;
+        margin-top: 5%;
+    }        
+}
+
+
+/* DESIGN */
+
+.design {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+.design-heading {
+    grid-column: 3 / 11;
+}
+
+#design-line {
+    width: 10%;
+}
+
+.design-title {
+    margin-top: 3%;
+}
+
+.design-gallery {
+    grid-column: 3 / 11;
+}
+
+.design-image {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.number-line {
+    border: 1px solid #707070;    
+}
+
+.number {
+    font-family: 'Argent CF', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #505050;
+    margin: 0;
+}
+
+.design-project-name {
+    font-family: 'benton-sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.project-subtitle {
+    font-family: 'Argent CF', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .design {
+        margin-top: 20%;
+    } 
+    .design-heading {
+        grid-column: 2 / 12;
+    }
+    #design-line {
+        width: 20%;
+    }
+    .design-gallery {
+        grid-column: 2 / 12;
+    } 
+    .design-project-name {
+        font-size: 1em;
+    } 
+    .project-subtitle {
+        font-size: 1em;
+    }   
+}
