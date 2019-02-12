@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-RegularItalic.woff") format('woff');
+    font-weight: italic;
+}
+
+@font-face {
+    font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-DemiBold.woff.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-DemiBoldItalic.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-Bold.woff") format('woff');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-BoldItalic.woff") format('woff');
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-Super.woff") format('woff');
+    font-weight: super;
+}
