@@ -4,12 +4,14 @@ body {
 
 h1 {
     font-family: 'ArgentCF', serif;
-    font-weight: super;
+    font-weight: 900;
     font-size: 3em;
     color: #313131;
 }
 
 h3 {
+    font-family: 'ArgentCF', serif;
+    font-weight: 700;
     font-size: 2em;
 }
 
