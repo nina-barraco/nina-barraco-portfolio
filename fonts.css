@@ -1,5 +1,12 @@
 @font-face {
     font-family: "ArgentCF";
+    src: url("fonts/ArgentCF-LightItalic.woff") format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ArgentCF";
     src: url("fonts/ArgentCF-Regular.woff") format('woff');
 }
 
