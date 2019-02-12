@@ -1,5 +1,5 @@
 body {
-    padding: 5%;
+    margin: 5%;
 }
 
 h1 {
@@ -42,6 +42,9 @@ main {
 }
 
 @media (max-width: 800px) {
+    body {
+        margin-top: 10%;
+    }
     h1 {
         font-size: 2.5em;
     }
@@ -143,13 +146,26 @@ main {
     max-height: 200px;
 }
 
+/* @media (max-width: 576px) {
+    .display-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+} */
+
 
 /* FOOTER */
 
 
 footer {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
 .footer-link {
@@ -204,30 +220,31 @@ footer {
 }
 
 
-/* DESIGN */
+/* DESIGN & FINE ART */
 
-.design {
+.project-main {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
 }
 
-.design-heading {
+.project-main-heading {
     grid-column: 3 / 11;
 }
 
-#design-line {
+#project-line {
     width: 10%;
+    margin-top: 1.5em
 }
 
-.design-title {
+.project-title {
     margin-top: 3%;
 }
 
-.design-gallery {
+.project-gallery {
     grid-column: 3 / 11;
 }
 
-.design-image {
+.project-image {
     width: 100%;
     margin-top: 15%;
 }
@@ -238,6 +255,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 3%;
+    text-align: right;
 }
 
 .number-line {
@@ -246,12 +264,13 @@ footer {
 
 .number {
     font-family: 'ArgentCF', serif;
+    font-weight: 300;
     font-style: italic;
     color: #505050;
     margin: 0;
 }
 
-.design-project-name {
+.project-name {
     font-family: 'benton-sans', sans-serif;
     font-weight: 700;
     font-size: 1.3em;
@@ -269,19 +288,19 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .design {
+    .project-main {
         margin-top: 20%;
     } 
-    .design-heading {
+    .project-main-heading {
         grid-column: 2 / 12;
     }
-    #design-line {
+    #project-line {
         width: 20%;
     }
-    .design-gallery {
+    .project-gallery {
         grid-column: 2 / 12;
     } 
-    .design-project-name {
+    .project-name {
         font-size: 1em;
     } 
     .project-subtitle {
