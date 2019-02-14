@@ -9,10 +9,20 @@ h1 {
     color: #313131;
 }
 
+h2 {
+    font-family: 'ArgentCF', serif;
+}
+
 h3 {
     font-family: 'ArgentCF', serif;
     font-weight: 700;
     font-size: 2em;
+}
+
+h5 {
+    font-family: 'benton-sans', sans-serif;
+    font-size: 1.1em;
+    color: #313131;
 }
 
 p {
@@ -181,6 +191,109 @@ footer {
 }
 
 
+/* INDEX */
+
+.index-main {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+.index-desc {
+    padding-top: 5%;
+    grid-column: 2 / 6;
+}
+
+#index-line {
+    width: 30%;
+}
+
+.index-title {
+    margin-top: 5%;
+}
+
+.index-subtitle {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    letter-spacing: .05em;
+    color: #505050;
+}
+
+.index-image {
+    grid-column: 2 / 13;
+    width: 100%;
+    position: relative;
+    bottom: 20%;
+}
+
+.index-links {
+    grid-column: 7 / 8;
+    position: relative;
+    bottom: 120%;
+}
+
+.line-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50%;
+    margin-bottom: 10%;
+}
+
+.index-link-line {
+    border: .5px solid #707070;
+    width: 50%;
+    margin: 0;
+}
+
+.index-number {
+    font-family: 'ArgentCF', serif;
+    color: #505050;
+    margin: 0%;
+}
+
+.index-link {
+    font-family: 'benton-sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: .1em;
+    color: #313131;
+}
+
+.index-image-mobile {
+    display: none;
+}
+
+@media (max-width: 764px) {
+    .index-desc {
+        grid-column: 2 / 12;
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .index-image-mobile {
+        display: inline;
+        background-image: url("images/index/landingpage_cropped.png");
+        background-size: cover;
+        width: 100%;
+        grid-column: 1 / 13;
+    }
+    .index-image {
+        display: none;
+    }
+    .index-links {
+        grid-column: 7 / 10;
+        bottom: 0%;
+    }
+    .index-link {
+        font-size: .8em;
+    }
+}
+
+
 /* ABOUT */
 
 .about {
@@ -306,4 +419,143 @@ footer {
     .project-subtitle {
         font-size: 1em;
     }   
+}
+
+
+/* PROJECT PAGES */
+
+.proj-header {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 5%;
+}
+
+.number-design {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.proj-number {
+    font-family: 'ArgentCF', serif;
+    font-style: italic;
+    color: #505050;
+}
+
+.proj-heading-line {
+    width: 20%;
+    height: 0%;
+    border: 1px solid #707070;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.proj-heading-design {
+    font-family: 'benton-sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #505050;
+}
+
+.proj-header-title {
+    margin-top: 0;
+    color: #313131;
+    text-transform: lowercase;
+}
+
+.proj-client-role {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.client-title {
+    margin-bottom: 0;
+}
+
+.client-desc {
+    margin-top: 3%;
+}
+
+.role-title {
+    margin-bottom: 0;
+}
+
+.role-desc {
+    margin-top: 3%;
+}
+
+.proj-subtitle {
+    text-transform: lowercase;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2em;
+    color: #505050;
+}
+
+@media (max-width: 768px) {
+    .proj-header {
+        margin-top: 15%;
+    }
+}
+
+
+
+/* GREAT BLUE ORANGE */
+
+.gbo-header-group {
+    grid-column: 2 / 9;
+}
+
+.gbo-top-image-background {
+    margin-top: 15%;
+}
+
+.gbo-top-image {
+    width: 100%;
+}
+
+.gbo-challenge {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 10%;
+}
+
+#gbo-challenge-subtitle {
+    grid-column: 2 / 5;
+}
+
+#gbo-challenge-p {
+    grid-column: 5 / 12;
+}
+
+.gbo-sketch-1 {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 10%;
+}
+
+.gbo-site-arch-sketch {
+    width: 100%;
+    grid-column: 2 / 12;
+}
+
+@media (max-width: 768px) {
+    .gbo-header-group {
+        grid-column: 2 / 10;
+    }
+}
+
+@media (max-width: 500px) {
+    .gbo-header-group {
+        grid-column: 2 / 12;
+    }
+    #gbo-challenge-subtitle {
+        grid-column: 2 / 12;
+    }
+    #gbo-challenge-p {
+        grid-column: 2 / 12;
+    }
 }
