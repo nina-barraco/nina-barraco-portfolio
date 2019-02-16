@@ -630,8 +630,9 @@ footer {
 
 .hivisid-typestudies {
     display: grid;
-    grid-template: 25% 25% 50% / repeat(12, 1fr);
+    grid-template: 1fr / repeat(12, 1fr);
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .oswald {
@@ -719,6 +720,215 @@ footer {
     font-size: 1em;
 }
 
+.hivisid-color {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#hivisid-color-subtitle {
+    grid-column: 3 / span 2;
+}
+
+#hivisid-color-p {
+    grid-column: 6 / 10;
+}
+
+.hivisid-colorstudies {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 10%;
+}
+
+.squares {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    grid-column-gap: 2%;
+}
+
+.hivisid-square {
+    width: 100%;
+    height: 150px;
+}
+
+.gold-square-group {
+    grid-column: 1 / 2; 
+}
+
+.gold-square {
+    background-color: #F9A027;
+}
+
+.teal-square-group {
+    grid-column: 2 / 3; 
+}
+
+.teal-square {
+    background-color: #7bb6ac;
+}
+
+.taupe-square-group {
+    grid-column: 3 / 4; 
+}
+
+.taupe-square {
+    background-color: #8d7e6a;
+}
+
+.navy-square-group {
+    grid-column: 4 / 5; 
+}
+
+.navy-square {
+    background-color: #00274c;
+}
+
+.color-square-specs {
+    font-size: .8em;
+}
+
+.hivisid-smartdynamic {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#hivisid-smartdynamic-subtitle {
+    grid-column: 3 / 6;
+}
+
+#hivisid-smartdynamic-p {
+    grid-column: 6 / 11;
+}
+
+.hivisid-gallery {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-gap: 1%;
+}
+
+.hivisid-annualreport {
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    grid-gap: 1%;
+}
+
+.annual-report-covers {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    grid-gap: 2%;
+}
+
+#annual-report-2 {
+    grid-column: 1 / span 2;
+}
+
+#annual-report-1 {
+    grid-column: 1 / span 1;
+}
+
+#annual-report-6 {
+    grid-column: 2 / span 1;
+}
+
+#annual-report-4 {
+    grid-column: 1 / span 2;
+}
+
+#annual-report-5 {
+    grid-column: 1 / span 2;
+}
+
+.hivisid-pic {
+    width: 100%;
+}
+
+.hivisid-trifold {
+    grid-column: 8 / 12;
+}
+
+#trifold-front {
+    margin-bottom: 3%;
+}
+
+.hivisid-yeartheme {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#hivisid-yeartheme-subtitle {
+    grid-column: 2 / 6;
+    text-transform: none;
+}
+
+#hivisid-yeartheme-p {
+    grid-column: 7 / 12;
+}
+
+/* .hivisid-logos-background {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+.hivisid-logos {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-gap: 1%;
+}
+
+#yeartheme-black {
+    grid-column: 3 / 7;
+}
+
+#yeartheme-reverse {
+    grid-column: 7 / 11;
+}
+
+.hivisid-yeartheme-2 {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#hivisid-yeartheme-p2 {
+    grid-column: 3 / 11;
+}
+
+.hivisid-yeartheme-banners {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-gap: 1%;
+}
+
+.hivisid-banner {
+    width: 100%;
+}
+
+#hivisid-banner-gold {
+    grid-column: 1 / span 3;
+}
+
+#hivisid-banner-teal {
+    grid-column: 4 / span 3;
+}
+
+#hivisid-banner-taupe {
+    grid-column: 7 / span 3;
+}
+
+#hivisid-banner-navy {
+    grid-column: 10 / span 3;
+}
 
 @media (max-width: 768px) {
     .hivisid-header-group {
@@ -733,7 +943,6 @@ footer {
     #hivisid-type-subtitle {
         grid-column: 2 / 12;
     }
-    
     #hivisid-type-p {
         grid-column: 2 / 12;
     }
@@ -752,6 +961,27 @@ footer {
     .hivisid-typeusecases {
         grid-column: 1 / 13;
         margin-top: 5%;
+    }
+    #hivisid-color-subtitle {
+        grid-column: 2 / 12;
+    }
+    #hivisid-color-p {
+        grid-column: 2 / 12;
+    }
+    .hivisid-square {
+        height: 100px;
+    }
+    #hivisid-smartdynamic-subtitle {
+        grid-column: 2 / 12;
+    }
+    #hivisid-smartdynamic-p {
+        grid-column: 2 / 12;
+    }
+    #hivisid-yeartheme-subtitle {
+        grid-column: 2 / 12;
+    }
+    #hivisid-yeartheme-p {
+        grid-column: 2 / 12;
     }
 }
 
@@ -785,5 +1015,42 @@ footer {
     }
     .hivisid-subtitle-ex {
         font-size: 1.5em;
+    }
+    .gold-square-group {
+        grid-column: 1 / span 2; 
+    }
+    .teal-square-group {
+        grid-column: 3 / span 2; 
+    }
+    .taupe-square-group {
+        grid-column: 1 / span 2; 
+    }
+    .navy-square-group {
+        grid-column: 3 / span 2; 
+    }
+    .hivisid-annualreport {
+        grid-column: 2 / 12;
+    }
+    .hivisid-trifold {
+        grid-column: 2 / 12;
+        margin-top: 3%;
+    }
+    #yeartheme-black {
+        grid-column: 2 / 12;
+    }
+    #yeartheme-reverse {
+        grid-column: 2 / 12;
+    }
+    #hivisid-banner-gold {
+        grid-column: 2 / 12;
+    }
+    #hivisid-banner-teal {
+        grid-column: 2 / 12;
+    }
+    #hivisid-banner-taupe {
+        grid-column: 2 / 12;
+    }
+    #hivisid-banner-navy {
+        grid-column: 2 / 12;
     }
 }
