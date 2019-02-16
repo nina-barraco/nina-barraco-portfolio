@@ -1,5 +1,5 @@
 body {
-    margin: 5%;
+    margin: 0;
 }
 
 h1 {
@@ -37,6 +37,11 @@ main {
     margin-top: 10%;
 }
 
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .heading-line {
     width: 50%;
     border: 1px solid #707070;
@@ -51,7 +56,15 @@ main {
     color: rgb(212, 127, 0)
 }
 
-@media (max-width: 800px) {
+.roman-numeral {
+    text-transform: uppercase;
+}
+
+.grey-background {
+    background-color: #EDEDED;
+}
+
+@media (max-width: 767px) {
     body {
         margin-top: 10%;
     }
@@ -75,6 +88,7 @@ main {
 .topnav {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
+    margin: 5%;
 }
 
 .initials {
@@ -427,7 +441,6 @@ footer {
 .proj-header {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 5%;
 }
 
 .number-design {
@@ -465,10 +478,21 @@ footer {
     text-transform: lowercase;
 }
 
+.proj-header-italic {
+    font-style: italic;
+}
+
 .proj-client-role {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+
+.client {
+    margin-right: 7%;
+}
+
+.role {
+    margin-left: 7%;
 }
 
 .client-title {
@@ -546,16 +570,91 @@ footer {
     .gbo-header-group {
         grid-column: 2 / 10;
     }
+    #gbo-challenge-subtitle {
+        grid-column: 2 / 12;
+    }
+    #gbo-challenge-p {
+        grid-column: 2 / 12;
+    }
 }
 
 @media (max-width: 500px) {
     .gbo-header-group {
         grid-column: 2 / 12;
     }
-    #gbo-challenge-subtitle {
+}
+
+/* HI VIS ID */
+
+.hivisid-header-group {
+    grid-column: 2 / 9;
+}
+
+.hivisid-top-image-background {
+    margin-top: 15%;
+}
+
+.hivisid-top-image {
+    width: 100%;
+}
+
+.hivisid-challenge {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#hivisid-challenge-subtitle {
+    grid-column: 3 / 6;
+}
+
+#hivisid-challenge-p {
+    grid-column: 6 / 11;
+}
+
+.hivisid-type {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#hivisid-type-subtitle {
+    grid-column: 2 / 4;
+}
+
+#hivisid-type-p {
+    grid-column: 4 / 8;
+}
+
+.hivisid-typeexamples {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+
+@media (max-width: 768px) {
+    .hivisid-header-group {
+        grid-column: 2 / 10;
+    }
+    #hivisid-challenge-subtitle {
         grid-column: 2 / 12;
     }
-    #gbo-challenge-p {
+    #hivisid-challenge-p {
+        grid-column: 2 / 12;
+    }
+    #hivisid-type-subtitle {
+        grid-column: 2 / 12;
+    }
+    
+    #hivisid-type-p {
+        grid-column: 2 / 12;
+    }
+}
+
+@media (max-width: 500px) {
+    .hivisid-header-group {
         grid-column: 2 / 12;
     }
 }
