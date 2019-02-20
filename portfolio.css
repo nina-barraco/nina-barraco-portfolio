@@ -64,6 +64,18 @@ main {
     background-color: #EDEDED;
 }
 
+.fullwidth-image {
+    width: 100%;
+}
+
+.top-margin {
+    margin-top: 15%;
+}
+
+.top-image-margin-top {
+    margin-top: 8%;
+}
+
 @media (max-width: 767px) {
     body {
         margin-top: 10%;
@@ -464,7 +476,7 @@ footer {
     grid-template: 1fr / repeat(12, 1fr);
 }
 
-.number-design {
+.number-type {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -484,7 +496,7 @@ footer {
     margin-right: 2%;
 }
 
-.proj-heading-design {
+.proj-heading-type {
     font-family: 'benton-sans', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
@@ -501,6 +513,10 @@ footer {
 
 .proj-header-italic {
     font-style: italic;
+}
+
+.proj-header-subtitle {
+    font-size: 1.5em;
 }
 
 .proj-client-role {
@@ -560,6 +576,7 @@ footer {
 
 #left-arrow:hover {
     fill: #707070;
+    cursor: pointer;
 }
 
 #right-arrow {
@@ -568,6 +585,7 @@ footer {
 
 #right-arrow:hover {
     fill: #707070;
+    cursor: pointer;
 }
 
 .bottom-nav-arrow {
@@ -585,6 +603,7 @@ footer {
 
 .bottom-nav-text:hover {
     color: #707070;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -594,9 +613,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .proj-bottom-nav-design {
-        margin-top: 40%;
-    }
     .bottom-nav-arrows {
         grid-column: 2 / 12;
     }
@@ -665,14 +681,6 @@ footer {
 
 .hivisid-header-group {
     grid-column: 2 / 9;
-}
-
-.hivisid-top-image-background {
-    margin-top: 15%;
-}
-
-.hivisid-top-image {
-    width: 100%;
 }
 
 .hivisid-challenge {
@@ -921,10 +929,6 @@ footer {
     grid-column: 1 / span 2;
 }
 
-.hivisid-pic {
-    width: 100%;
-}
-
 .hivisid-trifold {
     grid-column: 8 / 12;
 }
@@ -985,10 +989,6 @@ footer {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
     grid-gap: 1%;
-}
-
-.hivisid-banner {
-    width: 100%;
 }
 
 #hivisid-banner-gold {
@@ -1141,7 +1141,6 @@ footer {
 .commem-intro {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 15%;
     margin-bottom: 15%;
 }
 
@@ -1152,11 +1151,7 @@ footer {
 .commem-gallery-1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1%;
-}
-
-.commem-img {
-    width: 100%;
+    grid-gap: 10px;
 }
 
 #GalleryCatalog1 {
@@ -1171,9 +1166,77 @@ footer {
     grid-column: 2 / 12;
 }
 
+.commem-catalog {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-bottom: 15%;
+}
+
+.commem-catalog-p {
+    grid-column: 3 / 9;
+}
+
+.commem-gallery-2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+#GalleryCatalog6 {
+    grid-column: 2 / 12;
+}
+
+#GalleryCatalog7 {
+    grid-column: 2 / 12;
+}
+
+.commem-cards {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-bottom: 15%;
+}
+
+.commem-cards-p {
+    grid-column: 5 / 12;
+}
+
+.commem-gallery-3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+#Postcard1 {
+    grid-column: 2 / 7;
+    grid-row: 1 / 3;
+}
+
+#Postcard2 {
+    grid-column: 7 / 12;
+    grid-row: 1 / 3;
+}
+
+#Postcard3 {
+    grid-column: 2 / 7;
+    grid-row: 3 / 5;
+}
+
+#Postcard6 {
+    grid-column: 7 / 12;
+    grid-row: 3 / 4;
+}
+
+#Postcard5 {
+    grid-column: 7 / 12;
+    grid-row: 4 / 6;
+}
+
 @media (max-width: 600px) {
     .commem-header-group {
         grid-column: 2 / 12;
+    }
+    #commem-header-title {
+        font-size: 2em;
     }
     .commem-intro-p {
         grid-column: 2 / 12;
@@ -1183,6 +1246,82 @@ footer {
     }
     
     #GalleryCatalog4 {
+        grid-column: 2 / 12;
+    }
+    .commem-catalog-p {
+        grid-column: 2 / 12;
+    }
+    .commem-cards-p {
+        grid-column: 2 / 12;
+    }
+    #Postcard1 {
+        grid-column: 2 / 7;
+        grid-row: 1 / 2;
+    }
+    
+    #Postcard2 {
+        grid-column: 7 / 12;
+        grid-row: 1 / 2;
+    }
+    
+    #Postcard3 {
+        grid-column: 2 / 12;
+        grid-row: 2 / 3;
+    }
+    
+    #Postcard6 {
+        grid-column: 2 / 12;
+        grid-row: 3 / 4;
+    }
+    
+    #Postcard5 {
+        grid-column: 2 / 12;
+        grid-row: 4 / 5;
+    }
+}
+
+/* PORTRAITS IN WOOD AND INK */
+
+.portraits-header-group {
+    grid-column: 2 / 9;
+}
+
+.portraits-intro {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-bottom: 15%;
+}
+
+.portraits-intro-p {
+    grid-column: 6 / 12;
+}
+
+.portrait-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+#Will {
+    grid-column: 2 / 8;
+    grid-row: 1 / 3;
+}
+
+#Celina {
+    grid-column: 8 / 12;
+    grid-row: 1 / 2;
+}
+
+#Man {
+    grid-column: 8 / 12;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 600px) {
+    .portraits-header-group {
+        grid-column: 2 / 12;
+    }
+    .portraits-intro-p {
         grid-column: 2 / 12;
     }
 }
