@@ -73,7 +73,7 @@ main {
 }
 
 .top-image-margin-top {
-    margin-top: 8%;
+    margin-top: 7%;
 }
 
 @media (max-width: 767px) {
@@ -556,7 +556,7 @@ footer {
     color: #505050;
 }
 
-.proj-bottom-nav-design {
+.proj-bottom-nav{
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
     margin-top: 20%;
@@ -1322,6 +1322,32 @@ footer {
         grid-column: 2 / 12;
     }
     .portraits-intro-p {
+        grid-column: 2 / 12;
+    }
+}
+
+
+/* LEAVES */
+
+.leaves-header-group {
+    grid-column: 2 / 9;
+}
+
+.leaves-intro {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    margin-bottom: 15%;
+}
+
+.leaves-intro-p {
+    grid-column: 6 / 12;
+}
+
+@media (max-width: 600px) {
+    .leaves-header-group {
+        grid-column: 2 / 12;
+    }
+    .leaves-intro-p {
         grid-column: 2 / 12;
     }
 }
