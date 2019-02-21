@@ -72,6 +72,10 @@ main {
     margin-top: 15%;
 }
 
+.bottom-margin {
+    margin-bottom: 15%;
+}
+
 .top-image-margin-top {
     margin-top: 7%;
 }
@@ -386,7 +390,7 @@ footer {
 
 /* DESIGN & FINE ART */
 
-.project-main {
+.project-heading-group {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
 }
@@ -402,18 +406,20 @@ footer {
 
 .project-title {
     margin-top: 3%;
+    text-transform: lowercase;
 }
 
-.project-gallery {
+.project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.project-img-link {
     grid-column: 3 / 11;
 }
 
-.project-image {
-    width: 100%;
-    margin-top: 15%;
-}
-
 .project-info {
+    grid-column: 3 / 11;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -435,11 +441,11 @@ footer {
 }
 
 .project-name {
-    font-family: 'benton-sans', sans-serif;
+    font-family: 'ArgentCF', serif;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.8em;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: #313131;
 }
 
@@ -451,8 +457,8 @@ footer {
     margin: 0;
 }
 
-@media (max-width: 800px) {
-    .project-main {
+@media (max-width: 768px) {
+    .project-heading-group {
         margin-top: 20%;
     } 
     .project-main-heading {
@@ -461,11 +467,15 @@ footer {
     #project-line {
         width: 20%;
     }
-    .project-gallery {
-        grid-column: 2 / 12;
+    .project-img-link {
+        grid-column: 1 / 13;
     } 
+    .project-info {
+        grid-column: 2 / 12;
+        margin-top: 5%;
+    }
     .project-name {
-        font-size: 1em;
+        font-size: 1.2em;
     } 
     .project-subtitle {
         font-size: 1em;
@@ -1145,7 +1155,6 @@ footer {
 .commem-intro {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-bottom: 15%;
 }
 
 .commem-intro-p {
@@ -1173,7 +1182,6 @@ footer {
 .commem-catalog {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-bottom: 15%;
 }
 
 .commem-catalog-p {
@@ -1197,7 +1205,6 @@ footer {
 .commem-cards {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-bottom: 15%;
 }
 
 .commem-cards-p {
@@ -1293,7 +1300,6 @@ footer {
 .portraits-intro {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-bottom: 15%;
 }
 
 .portraits-intro-p {
@@ -1302,7 +1308,8 @@ footer {
 
 .portraits-gallery-grid {
     display: grid;
-    grid-template: 1fr / repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    height: 1700px;
 }
 
 .portraits-gallery {
@@ -1311,12 +1318,22 @@ footer {
     column-gap: 10px;
 }
 
+
+@media (max-width: 768px) {
+    .portraits-gallery-grid {
+        height: 1000px;
+    }
+}
+
 @media (max-width: 600px) {
     .portraits-header-group {
         grid-column: 2 / 12;
     }
     .portraits-intro-p {
         grid-column: 2 / 12;
+    }
+    .portraits-gallery-grid {
+        height: auto;
     }
     .portraits-gallery {
         columns: 1;
@@ -1333,7 +1350,6 @@ footer {
 .leaves-intro {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-bottom: 15%;
 }
 
 .leaves-intro-p {
@@ -1347,7 +1363,7 @@ footer {
 
 .leaves-gallery {
     grid-column: 2 / 12;
-    columns: 2;
+    columns: 3;
     column-gap: 10px;
 }
 
@@ -1360,5 +1376,56 @@ footer {
     }
     .leaves-gallery {
         columns: 1;
+    }
+}
+
+
+/* BOOK OF NAMES */
+
+.book-header-group {
+    grid-column: 2 / 9;
+}
+
+.book-intro {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+.book-intro-p {
+    grid-column: 6 / 12;
+}
+
+.book-gallery {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+#bookimg1 {
+    grid-column: 2 / 12;
+}
+
+#bookimg2 {
+    grid-column: 2 / 12;
+}
+
+.book-closing {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+.book-closing-p {
+    grid-column: 5 / 12;
+}
+
+@media (max-width: 600px) {
+    .book-header-group {
+        grid-column: 2 / 12;
+    }
+    .book-intro-p {
+        grid-column: 2 / 12;
+    }
+    .book-closing-p {
+        grid-column: 2 / 12;
     }
 }
