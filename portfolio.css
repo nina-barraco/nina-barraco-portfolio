@@ -76,6 +76,10 @@ main {
     margin-top: 7%;
 }
 
+.css-column-grid {
+    margin-top: 10px;
+}
+
 @media (max-width: 767px) {
     body {
         margin-top: 10%;
@@ -1296,25 +1300,15 @@ footer {
     grid-column: 6 / 12;
 }
 
-.portrait-gallery {
+.portraits-gallery-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 10px;
+    grid-template: 1fr / repeat(12, 1fr);
 }
 
-#Will {
-    grid-column: 2 / 8;
-    grid-row: 1 / 3;
-}
-
-#Celina {
-    grid-column: 8 / 12;
-    grid-row: 1 / 2;
-}
-
-#Man {
-    grid-column: 8 / 12;
-    grid-row: 2 / 3;
+.portraits-gallery {
+    grid-column: 2 / 12;
+    columns: 2;
+    column-gap: 10px;
 }
 
 @media (max-width: 600px) {
@@ -1323,6 +1317,9 @@ footer {
     }
     .portraits-intro-p {
         grid-column: 2 / 12;
+    }
+    .portraits-gallery {
+        columns: 1;
     }
 }
 
@@ -1343,11 +1340,25 @@ footer {
     grid-column: 6 / 12;
 }
 
+.leaves-gallery-grid {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+}
+
+.leaves-gallery {
+    grid-column: 2 / 12;
+    columns: 2;
+    column-gap: 10px;
+}
+
 @media (max-width: 600px) {
     .leaves-header-group {
         grid-column: 2 / 12;
     }
     .leaves-intro-p {
         grid-column: 2 / 12;
+    }
+    .leaves-gallery {
+        columns: 1;
     }
 }
