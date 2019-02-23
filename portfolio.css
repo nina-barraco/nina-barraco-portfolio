@@ -701,8 +701,6 @@ footer {
 .hivisid-challenge {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 #hivisid-challenge-subtitle {
@@ -717,7 +715,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding-top: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
 }
 
 #hivisid-type-subtitle {
@@ -753,22 +751,36 @@ footer {
     visibility: hidden;
 }
 
+.hivisid-color-background-image {
+    background-image: url("images/design-project-images/hi-vis-id/Annual_Report_7_wall.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .hivisid-color {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 60%;
 }
 
 #hivisid-color-subtitle {
-    grid-column: 3 / span 2;
+    grid-column: 2 / 12;
+    font-family: 'benton-sans', sans-serif;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
 #hivisid-color-p {
-    grid-column: 6 / 10;
+    grid-column: 5 / 9;
 }
 
 .hivisid-colorstudies {
+    grid-column: 2 / 12;
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
     margin-top: 10%;
@@ -969,7 +981,7 @@ footer {
         grid-column: 2 / 12;
     }
     #hivisid-type-p {
-        grid-column: 2 / 12;
+        grid-column: 3 / 11;
     }
     #letter-study-oswald {
         grid-column: 3 / 11;
@@ -983,12 +995,13 @@ footer {
     #type-study-examples-cropped {
         visibility: visible;
         grid-column: 3 / 11;
+        padding-top: 20%;
     }
     #hivisid-color-subtitle {
         grid-column: 2 / 12;
     }
     #hivisid-color-p {
-        grid-column: 2 / 12;
+        grid-column: 3 / 11;
     }
     .hivisid-square {
         height: 100px;
@@ -1032,11 +1045,8 @@ footer {
         margin-top: 2%;
         font-size: 1em;
     }
-    .hivisid-header-ex {
-        font-size: 1.8em;
-    }
-    .hivisid-subtitle-ex {
-        font-size: 1.5em;
+    .hivisid-color-background-image {
+        background-image: url("images/design-project-images/hi-vis-id/Annual_Report_7_wall_mobile.png");
     }
     .gold-square-group {
         grid-column: 1 / span 2; 
