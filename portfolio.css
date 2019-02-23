@@ -837,8 +837,6 @@ footer {
 .hivisid-smartdynamic {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 #hivisid-smartdynamic-subtitle {
@@ -900,17 +898,15 @@ footer {
 .hivisid-yeartheme {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 #hivisid-yeartheme-subtitle {
-    grid-column: 2 / 6;
+    grid-column: 3 / 11;
     text-transform: none;
 }
 
 #hivisid-yeartheme-p {
-    grid-column: 7 / 12;
+    grid-column: 3 / 11;
 }
 
 /* .hivisid-logos-background {
@@ -937,8 +933,6 @@ footer {
 .hivisid-yeartheme-2 {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 #hivisid-yeartheme-p2 {
@@ -948,7 +942,7 @@ footer {
 .hivisid-yeartheme-banners {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    grid-gap: 1%;
+    grid-gap: 10px;
 }
 
 #hivisid-banner-gold {
@@ -967,7 +961,7 @@ footer {
     grid-column: 10 / span 3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 823px) {
     .hivisid-header-group {
         grid-column: 2 / 10;
     }
