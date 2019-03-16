@@ -10,7 +10,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="fonts.css">
 </head>
 
-<body>
+<body onscroll="fadeIn(this)">
+    <script>
+        document.body.classList.add('fade');
+    </script>
 
     <nav class="topnav">
         <a href="index.html" class="initials">nb</a>
@@ -37,7 +40,7 @@
         </div>
     </div>
 
-    <div class="project">
+    <div class="project scroll-opacity fade-js">
         <a href="d-greatblueorange.html" class="project-img-link">
             <img src="images/design/sketch3-background-cropped.png" class="fullwidth-image" alt="Project One Thumbnail">
         </a>
@@ -52,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div class="project">
+    <div class="project scroll-opacity fade-js">
         <a href="d-hivisid.html" class="project-img-link top-margin">
             <img src="images/design/Annual_Report_2_cropped.png" class="fullwidth-image" alt="Project Two Thumbnail">
         </a>
@@ -67,7 +70,7 @@
             </div>
         </div>
     </div>
-    <div class="project">
+    <div class="project scroll-opacity fade-js">
         <a href="d-commemorating.html" class="project-img-link top-margin">
             <img src="images/design/postcard4-cropped.png" class="fullwidth-image" alt="Project Three Thumbnail">
         </a>
@@ -89,10 +92,16 @@
             <h3>let's connect</h3>
             <div class="footer-links"></div>
                 <a href="#" class="footer-link">LinkedIn</a>
-                <a href="#" class="footer-link">Email</a>
+                <a href="mailto:barraconina@gmail.com" class="footer-link">Email</a>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            document.body.classList.remove('fade');
+        });
+    </script>
 
 <script src="portfolio.js"></script>
 

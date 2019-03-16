@@ -1,11 +1,17 @@
 body {
     margin: 0;
+    opacity: 1;
+    transition: 0.7s opacity;
+}
+
+body.fade {
+    opacity: 0;
+    transition: none;
 }
 
 h1 {
     font-family: 'ArgentCF', serif;
     font-weight: 900;
-    font-size: 3em;
     color: #313131;
 }
 
@@ -27,14 +33,17 @@ h5 {
 
 p {
     font-family: 'benton-sans', sans-serif;
-    font-size: 1.1em;
     font-weight: 400;
     line-height: 1.7em;
     color: #505050;
 }
 
 main {
-    margin-top: 10%;
+    margin-top: 8%;
+}
+
+img {
+    width: 100%;
 }
 
 .container {
@@ -68,12 +77,12 @@ main {
     width: 100%;
 }
 
-.top-margin {
-    margin-top: 15%;
+.top-padding {
+    margin-top: 10%;
 }
 
-.bottom-margin {
-    margin-bottom: 15%;
+.bottom-padding {
+    margin-bottom: 10%;
 }
 
 .top-image-margin-top {
@@ -84,10 +93,21 @@ main {
     margin-top: 10px;
 }
 
+.scroll-opacity {
+    opacity: 0;
+    transition: opacity .75s ease-in;
+}
+
+.fade-animation {
+    opacity: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
 @media (max-width: 767px) {
-    body {
-        margin-top: 10%;
-    }
     h1 {
         font-size: 2.5em;
     }
@@ -108,7 +128,6 @@ main {
 .topnav {
     display: grid;
     grid-template: 1fr / repeat(12, 1fr);
-    margin: 5%;
 }
 
 .initials {
@@ -524,6 +543,7 @@ footer {
     margin-top: 0;
     color: #313131;
     text-transform: lowercase;
+    font-size: 2.5rem;
 }
 
 .proj-header-italic {
@@ -535,16 +555,7 @@ footer {
 }
 
 .proj-client-role {
-    display: flex;
-    flex-direction: row;
-}
-
-.client {
-    margin-right: 7%;
-}
-
-.role {
-    margin-left: 7%;
+    grid-column: 3 / 8;
 }
 
 .client-title {
@@ -566,8 +577,7 @@ footer {
 .proj-subtitle {
     text-transform: lowercase;
     font-weight: 600;
-    font-style: italic;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #505050;
 }
 
@@ -628,8 +638,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .proj-header-title {
+        font-size: 2.2rem;
+    }
     .bottom-nav-arrows {
         grid-column: 2 / 12;
+    }
+    .proj-client-role {
+        grid-column: 3 / 15;
     }
 }
 
@@ -637,60 +653,103 @@ footer {
 
 /* GREAT BLUE ORANGE */
 
-.gbo-header-group {
-    grid-column: 2 / 9;
+.gbo-header-img {
+    background-image: url('images/design-project-images/great-blue-orange/index-sunset-1.png');
+    background-size: cover;
+    height: 70vh;
 }
 
-.gbo-top-image-background {
-    margin-top: 15%;
+.gbo-header-title {
+    grid-column: 3 / 12;
+    margin-bottom: 10%;
 }
 
-.gbo-top-image {
-    width: 100%;
-}
-
-.gbo-challenge {
-    display: grid;
-    grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 10%;
-}
-
-#gbo-challenge-subtitle {
-    grid-column: 2 / 5;
-}
-
-#gbo-challenge-p {
-    grid-column: 5 / 12;
-}
-
-.gbo-sketch-1 {
-    display: grid;
-    grid-template: 1fr / repeat(12, 1fr);
-    margin-top: 10%;
+.gbo-header-p {
+    grid-column: 9 / 15;
 }
 
 .gbo-site-arch-sketch {
-    width: 100%;
-    grid-column: 2 / 12;
+    grid-column: 4 / 14;
 }
 
-@media (max-width: 768px) {
+.gbo-breathable-title {
+    grid-column: 3 / 7;
+}
+
+.gbo-breathable-p {
+    grid-column: 8 / 15;
+}
+
+.gbo-sketch-wireframe-background {
+    grid-column: 2 / 16;
+    background-color: #E8E8E8;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+}
+
+.gbo-index-sketch {
+    margin-right: 3%;
+    box-shadow: 0px 3px 20px #707070;
+}
+
+.gbo-index-wireframe {
+    margin-left: 3%;
+    box-shadow: 0px 3px 20px #707070;
+}
+
+.gbo-mobile-group {
+    grid-column: 3 / 15;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gbo-responsive-text {
+    width: 75%;
+}
+
+@media (max-width: 600px) {
     .gbo-header-group {
         grid-column: 2 / 10;
     }
     #gbo-challenge-subtitle {
         grid-column: 2 / 12;
     }
-    #gbo-challenge-p {
-        grid-column: 2 / 12;
+    .gbo-header-p {
+        grid-column: 3 / 15;
+    }
+    .gbo-site-arch-sketch {
+        grid-column: 2 / 16;
+    }
+    .gbo-breathable-title {
+        grid-column: 3 / 15;
+    }
+    
+    .gbo-breathable-p {
+        grid-column: 3 / 15;
+    }
+    .gbo-sketch-wireframe-background {
+        grid-column: 1 / 17;
+        flex-wrap: wrap;
+    }
+    .gbo-index-sketch {
+        margin-right: 0%;
+        margin-bottom: 3%
+    }
+    
+    .gbo-index-wireframe {
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+    .gbo-mobile-group {
+        flex-wrap: wrap;
+    }
+    .gbo-responsive-text {
+        width: 100%;
     }
 }
 
-@media (max-width: 500px) {
-    .gbo-header-group {
-        grid-column: 2 / 12;
-    }
-}
 
 /* HI VIS ID */
 

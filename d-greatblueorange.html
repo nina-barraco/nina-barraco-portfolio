@@ -10,30 +10,37 @@
 </head>
 <body>
 
-    <nav class="topnav">
-        <a href="index.html" class="initials">nb</a>
-        <div class="nav-container">
-            <div class="topnav-icon" onclick="clickNav(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <div class="topnav-links" id="topnav-links-js">
-                <a href="design.html" class="topnav-link">Design</a>
-                <a href="fine-art.html" class="topnav-link">Fine Art</a>
-                <a href="about.html" class="topnav-link">About</a>
-            </div>
-        </div>
-    </nav>
+    <div class="gbo-header-img">
 
-    <header class="proj-header">
-        <div class="gbo-header-group">
-            <div class="number-type">
-                <h3 class="proj-number">01.</h3>
-                <div class="proj-heading-line"></div>
-                <h4 class="proj-heading-type">Design</h4>
+        <nav class="topnav">
+            <a href="index.html" class="initials">nb</a>
+            <div class="nav-container">
+                <div class="topnav-icon" onclick="clickNav(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="topnav-links" id="topnav-links-js">
+                    <a href="design.html" class="topnav-link">Design</a>
+                    <a href="fine-art.html" class="topnav-link">Fine Art</a>
+                    <a href="about.html" class="topnav-link">About</a>
+                </div>
             </div>
-            <h1 class="proj-header-title">Prioritizing the Needs of People & Communities</h1>
+        </nav>
+
+    </div>
+
+    <main>
+
+        <div class="gbo-header-group grid">
+            <div class="gbo-header-title">
+                <div class="number-type">
+                    <h3 class="proj-number">01.</h3>
+                    <div class="proj-heading-line"></div>
+                    <h4 class="proj-heading-type">Design</h4>
+                </div>
+                <h1 class="proj-header-title">Prioritizing the Needs of People & Communities</h1>
+            </div>
             <div class="proj-client-role">
                 <div class="client">
                     <h5 class="client-title">Client</h5>
@@ -44,24 +51,52 @@
                     <p class="role-desc">UX/UI and development</p>
                 </div>
             </div>
+            <div class="gbo-header-p">
+                <p>Great Blue Orange Consulting, based in Traverse City, Michigan, was in need of a way to build their brand and connect with potential clients. My solution was the design and development of a website that leverages their brand to showcase their unique approach and proven track record of leading successful community initiatives.
+                    <br>
+                    <br>
+                    <a href="https://nina-barraco.github.io/Great-Blue-Orange-Website/">www.greatblueorange.com</a>
+                </p>
+            </div>
         </div>
-    </header>
 
-    <div class="gbo-top-image-background">
-        <img src="images/design-project-images/great-blue-orange/GreatBlueOrange_top.png" class="gbo-top-image" alt="Great Blue Orange Home Page">
-    </div>
-
-    <div class="gbo-challenge">
-        <h2 class="proj-subtitle" id="gbo-challenge-subtitle">The Challenge</h2>
-        <div class="proj-body-copy" id="gbo-challenge-p">
-            <p class="proj-body-copy">Great Blue Orange Consulting, based in Traverse City, Michigan, was in need of a way to build their brand and connect with potential clients. In addition, they needed a platform where they could showcase their human-centric approach and proven track record of leading successful community initiatives.</p>
-            <p class="proj-body-copy">My solution was the design and development of a website that would leverage their brand to highlight their services and unique approach through a few key methods: an easily accessible architecture, and an image-heavy design that depicts Northern Michigan and the community.</p>
-        </div>
-    </div>
-
-    <div class="gbo-sketch-1">
+    <div class="gbo-sketch-1 grid top-padding bottom-padding">
         <img src="images/design-project-images/great-blue-orange/sketch1.png" class="gbo-site-arch-sketch" alt="Sketch of site architecture">
     </div>
+
+    <div class="gbo-breathable grid bottom-padding">
+        <h2 class="proj-subtitle gbo-breathable-title">Breathable & Accessible</h2>
+        <p class="gbo-breathable-p">
+            The target audiences for this website were potential clients and community members interested in community-based initiatives, the public sector, and politics. Since not every user would be tech savvy, it was imperative that the website architecture be approachable and easy to navigate.
+        </p>
+    </div>
+
+    <div class="gbo-sketch-wireframe grid">
+        <div class="gbo-sketch-wireframe-background">
+            <div class="gbo-index-sketch">
+                <img src="images/design-project-images/great-blue-orange/sketch2.png" alt="Sketch of index page">
+            </div>
+            <div class="gbo-index-wireframe">
+                <img src="images/design-project-images/great-blue-orange/Index-cropped.png" alt="Index page wireframe">
+            </div>
+        </div>
+    </div>
+    
+    <div class="gbo-mobile grid top-padding bottom-padding">
+        <div class="gbo-mobile-group">
+            <div class="gbo-mobile-placeholder">
+                <img src="images/design-project-images/great-blue-orange/mobile-placeholder.png" alt="Index page on mobile">
+            </div>
+            <div class="gbo-responsive-text">
+                <h2 class="proj-subtitle">Representing the Greater Northern Michigan Region</h2>
+                <p>
+                    As a company that advises mostly tax-exempt entities in the greater Northern Michigan region, from public school districts to wildlife organizations to political campaigns, the website also needed to reflect a sense of community and have a regional focus. Pictures of community members and the natural beauty of northern Michigan feature prominently on the website. I leveraged the blue and orange colors in their brand and the imagery to draw further emphasis to the name of their company, which was born from their love of the Northern Michigan region.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </main>
     
 <script src="portfolio.js"></script>
 </body>
