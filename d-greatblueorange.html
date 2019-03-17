@@ -8,7 +8,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="portfolio.css">
     <link rel="stylesheet" type="text/css" media="screen" href="fonts.css">
 </head>
-<body>
+
+<body onscroll="fadeIn(this)">
+    <script>
+        document.body.classList.add('fade');
+    </script>
 
     <div class="gbo-header-img">
 
@@ -32,7 +36,7 @@
 
     <main>
 
-        <div class="gbo-header-group grid">
+        <div class="gbo-header-group grid scroll-opacity fade-js">
             <div class="gbo-header-title">
                 <div class="number-type">
                     <h3 class="proj-number">01.</h3>
@@ -40,6 +44,13 @@
                     <h4 class="proj-heading-type">Design</h4>
                 </div>
                 <h1 class="proj-header-title">Prioritizing the Needs of People & Communities</h1>
+            </div>
+            <div class="gbo-header-p">
+                <p>Great Blue Orange Consulting, based in Traverse City, Michigan, was in need of a way to build their brand and connect with potential clients. My solution was the design and development of a website that leverages their brand to showcase their unique approach and proven track record of leading successful community initiatives.
+                    <br>
+                    <br>
+                    <a href="https://nina-barraco.github.io/Great-Blue-Orange-Website/">www.greatblueorange.com</a>
+                </p>
             </div>
             <div class="proj-client-role">
                 <div class="client">
@@ -51,52 +62,151 @@
                     <p class="role-desc">UX/UI and development</p>
                 </div>
             </div>
-            <div class="gbo-header-p">
-                <p>Great Blue Orange Consulting, based in Traverse City, Michigan, was in need of a way to build their brand and connect with potential clients. My solution was the design and development of a website that leverages their brand to showcase their unique approach and proven track record of leading successful community initiatives.
-                    <br>
-                    <br>
-                    <a href="https://nina-barraco.github.io/Great-Blue-Orange-Website/">www.greatblueorange.com</a>
-                </p>
+        </div>
+
+        <div class="gbo-sketch-1 grid top-padding bottom-padding scroll-opacity fade-js">
+            <img src="images/design-project-images/great-blue-orange/sketch1.png" class="gbo-site-arch-sketch" alt="Sketch of site architecture">
+        </div>
+
+        <div class="gbo-breathable grid bottom-padding scroll-opacity fade-js">
+            <h2 class="proj-subtitle gbo-breathable-title">Breathable & Accessible</h2>
+            <p class="gbo-breathable-p">
+                The target audiences for this website were potential clients and community members interested in community-based initiatives, the public sector, and politics. Since not every user would be tech savvy, it was imperative that the website architecture be approachable and easy to navigate.
+            </p>
+        </div>
+
+        <div class="gbo-sketch-wireframe grid scroll-opacity fade-js">
+            <div class="gbo-sketch-wireframe-background">
+                <div class="gbo-index-sketch">
+                    <img src="images/design-project-images/great-blue-orange/sketch2.png" alt="Sketch of index page">
+                </div>
+                <div class="gbo-index-wireframe">
+                    <img src="images/design-project-images/great-blue-orange/Index-cropped.png" alt="Index page wireframe">
+                </div>
+            </div>
+        </div>
+        
+        <div class="gbo-mobile grid top-padding bottom-padding scroll-opacity fade-js">
+            <div class="gbo-mobile-group">
+                <div class="gbo-mobile-placeholder">
+                    <img src="images/design-project-images/great-blue-orange/mobile-placeholder.png" alt="Index page on mobile">
+                </div>
+                <div class="gbo-responsive-text">
+                    <h2 class="proj-subtitle">Representing the Greater Northern Michigan Region</h2>
+                    <p>
+                        As a company that advises mostly tax-exempt entities in the greater Northern Michigan region, from public school districts to wildlife organizations to political campaigns, the website also needed to reflect a sense of community and have a regional focus. Pictures of community members and the natural beauty of northern Michigan feature prominently on the website. I leveraged the blue and orange colors in their brand and the imagery to draw further emphasis to the name of their company, which was born from their love of the Northern Michigan region.
+                    </p>
+                </div>
             </div>
         </div>
 
-    <div class="gbo-sketch-1 grid top-padding bottom-padding">
-        <img src="images/design-project-images/great-blue-orange/sketch1.png" class="gbo-site-arch-sketch" alt="Sketch of site architecture">
-    </div>
-
-    <div class="gbo-breathable grid bottom-padding">
-        <h2 class="proj-subtitle gbo-breathable-title">Breathable & Accessible</h2>
-        <p class="gbo-breathable-p">
-            The target audiences for this website were potential clients and community members interested in community-based initiatives, the public sector, and politics. Since not every user would be tech savvy, it was imperative that the website architecture be approachable and easy to navigate.
-        </p>
-    </div>
-
-    <div class="gbo-sketch-wireframe grid">
-        <div class="gbo-sketch-wireframe-background">
-            <div class="gbo-index-sketch">
-                <img src="images/design-project-images/great-blue-orange/sketch2.png" alt="Sketch of index page">
-            </div>
-            <div class="gbo-index-wireframe">
-                <img src="images/design-project-images/great-blue-orange/Index-cropped.png" alt="Index page wireframe">
-            </div>
+        <div class="gbo-lighthouse grid scroll-opacity fade-js">
+            <div class="gbo-lighthouse-img"></div>
         </div>
-    </div>
-    
-    <div class="gbo-mobile grid top-padding bottom-padding">
-        <div class="gbo-mobile-group">
-            <div class="gbo-mobile-placeholder">
-                <img src="images/design-project-images/great-blue-orange/mobile-placeholder.png" alt="Index page on mobile">
+
+        <div class="gbo-user-testing grid top-padding scroll-opacity fade-js">
+            <h2 class="gbo-user-testing-heading proj-subtitle">A User Testing Breakdown</h2>
+            <p class="gbo-user-testing-p-1">
+                User testing was conducted remotely and in person over the course of 11/12/18-11/26/18. Five people comprised the user testing group, that represented various constituents of their target audience.
+            </p>
+            <div class="gbo-breakdown">
+                <div class="gbo-breakdown-item">
+                    <div class="gbo-breakdown-number-title">
+                        <h4 class="gbo-breakdown-number">01.</h4>
+                        <div class="gbo-breakdown-line"></div>
+                        <h4 class="gbo-breakdown-title">Area of Focus</h4>
+                    </div>
+                    <div class="gbo-breakdown-p">
+                        <p>Clarity of organization and content.</p>
+                    </div>
+                </div>
+                <div class="gbo-breakdown-item">
+                    <div class="gbo-breakdown-number-title">
+                        <h4 class="gbo-breakdown-number">02.</h4>
+                        <div class="gbo-breakdown-line"></div>
+                        <h4 class="gbo-breakdown-title">Problem Statement</h4>
+                    </div>
+                    <div class="gbo-breakdown-p">
+                        <p>Easily navigable site that is visually consistent.</p>
+                    </div>
+                </div>
+                <div class="gbo-breakdown-item">
+                    <div class="gbo-breakdown-number-title">
+                        <h4 class="gbo-breakdown-number">03.</h4>
+                        <div class="gbo-breakdown-line"></div>
+                        <h4 class="gbo-breakdown-title">Hypothesis</h4>
+                    </div>
+                    <div class="gbo-breakdown-p">
+                        <p>The site is easy to navigate and adequately conveys her brand.</p>
+                    </div>
+                </div>
+                <div class="gbo-breakdown-item">
+                    <div class="gbo-breakdown-number-title">
+                        <h4 class="gbo-breakdown-number">04.</h4>
+                        <div class="gbo-breakdown-line"></div>
+                        <h4 class="gbo-breakdown-title">Target Users</h4>
+                    </div>
+                    <div class="gbo-breakdown-p">
+                        <p>Community members, tax-exempt people.</p>
+                    </div>
+                </div>
             </div>
-            <div class="gbo-responsive-text">
-                <h2 class="proj-subtitle">Representing the Greater Northern Michigan Region</h2>
+            <div class="gbo-user-testing-gallery">
+                <div class="gbo-user-testing-img">
+                    <img src="images/design-project-images/great-blue-orange/about-pride.png" alt="Happy community members">
+                </div>
+                <div class="gbo-user-testing-img">
+                    <img src="images/design-project-images/great-blue-orange/about-pride2.png" alt="Happy community members">
+                </div>
+                <div class="gbo-user-testing-img">
+                    <img src="images/design-project-images/great-blue-orange/about-pride3.png" alt="Happy community members">
+                </div>
+            </div>
+            <div class="gbo-user-testing-p-2 bottom-padding">
                 <p>
-                    As a company that advises mostly tax-exempt entities in the greater Northern Michigan region, from public school districts to wildlife organizations to political campaigns, the website also needed to reflect a sense of community and have a regional focus. Pictures of community members and the natural beauty of northern Michigan feature prominently on the website. I leveraged the blue and orange colors in their brand and the imagery to draw further emphasis to the name of their company, which was born from their love of the Northern Michigan region.
+                    While the hypothesis was proven correct, two major insights arose from user testing: the first was a need to be more deliberate when choosing images of the community, and the second was the need to develop more content in regards to case studies and her services.
                 </p>
             </div>
         </div>
-    </div>
+
+        <div class="gbo-code-img-background grid scroll-opacity fade-js">
+            <img src="images/design-project-images/great-blue-orange/GBO-code.png" class="gbo-code-img-1" alt="Sunset with code overlay">
+            <img src="images/design-project-images/great-blue-orange/GBO-code-mobile.png" class="gbo-code-img-2" alt="Sunset with code overlay">
+        </div>
+
+        <div class="gbo-responsive grid top-padding bottom-padding scroll-opacity fade-js">
+            <h2 class="gbo-responsive-title proj-subtitle">Developing a Responsive & Scalable Website</h2>
+            <p class="gbo-responsive-p">In addition the UX/UI of this website, I also developed it. The primary languages used included HTML, CSS, and JavaScript. My code can be found on <span><a href="#" class="inline-link">Github</a></span>. The website is temporarily hosted on <span><a href="#" class="inline-link">Github pages.</a></span></p>
+        </div>
 
     </main>
+
+    <div class="proj-bottom-nav">
+        <div class="bottom-nav-arrows">
+            <a href="d-greatblueorange.html">
+                <svg id="left-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><title>Artboard 1 copy 3</title><path d="M80,24.64l6.34,6.68L17.77,97.81H200V107H17.77l68.6,66.49L80,180.13,0,102.38Z"/></svg>                </a>
+            <a href="design.html" class="bottom-nav-text">Back to Design Page</a>
+            <a href="d-commemorating.html">
+                <svg id="right-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><title>Artboard 1</title><path d="M200,101.59l-80,77.75-6.34-6.68,68.6-66.5H0V97H182.23l-68.6-66.49L120,23.85Z"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-connect">
+            <h3>let's connect</h3>
+            <div class="footer-links"></div>
+                <a href="#" class="footer-link">LinkedIn</a>
+                <a href="#" class="footer-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            document.body.classList.remove('fade');
+        });
+    </script>
     
 <script src="portfolio.js"></script>
 </body>
